@@ -21,7 +21,8 @@ public class Parser {
             System.out.println("Project: " + config.getProject());
             System.out.println("Region: " + config.getRegion());
             System.out.println("JSONPath: " + config.getPipelineOptions().get("JSONPath"));
-            System.out.println("topology: " + config.getLabels().get("topology"));
+            System.out.println("topology: " + config.getLabels().getTopology());
+            System.out.println("additional labels: " + config.getLabels().getAdditionallabels());
         } catch (IOException e) {
             e.printStackTrace();
         }

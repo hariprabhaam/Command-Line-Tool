@@ -1,6 +1,7 @@
 package org.google_pso;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class JSONConfig {
     private String project;
@@ -12,8 +13,8 @@ public class JSONConfig {
     private String jobName;
     private String jobDescription;
 
-    private HashMap<String,String> pipelineOptions;
-    private HashMap<String,String> labels;
+    private Map<String,String> pipelineOptions;
+    private Labels labels;
 
     public String getProject() {
         return this.project;
@@ -70,19 +71,19 @@ public class JSONConfig {
         this.jobDescription = jobDescription;
     }
 
-    public HashMap<String, String> getPipelineOptions() {
+    public Map<String, String> getPipelineOptions() {
         return pipelineOptions;
     }
 
-    public void setPipelineOptions(HashMap<String, String> pipelineOptions) {
+    public void setPipelineOptions(Map<String, String> pipelineOptions) {
         this.pipelineOptions = pipelineOptions;
     }
 
-    public HashMap<String, String> getLabels() {
+    public Labels getLabels() {
         return labels;
     }
 
-    public void setLabels(HashMap<String, String> labels) {
+    public void setLabels(Labels labels) {
         this.labels = labels;
     }
 }
