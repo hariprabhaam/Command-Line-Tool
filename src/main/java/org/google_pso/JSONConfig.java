@@ -14,7 +14,7 @@ public class JSONConfig {
     private String jobDescription;
 
     private Map<String,String> pipelineOptions;
-    private Labels labels;
+    private Map<String,String> labels;
 
     public String getProject() {
         return this.project;
@@ -79,11 +79,11 @@ public class JSONConfig {
         this.pipelineOptions = pipelineOptions;
     }
 
-    public Labels getLabels() {
+    public Map<String,String> getLabels() {
         return labels;
     }
 
-    public void setLabels(Labels labels) {
+    public void setLabels(Map<String, String> labels) {
         this.labels = labels;
     }
 }
